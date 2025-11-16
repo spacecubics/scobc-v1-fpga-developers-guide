@@ -1,0 +1,77 @@
+== Safety Processor (IGLOO2) Development
+
+The Safety Processor is used by programming the firmware provided by Space Cubics.  
+At this time, modifications to the Safety Processor logic by the user are not supported.
+
+It is recommended to always use the latest version of the IGLOO2 firmware.
+
+=== Firmware Update
+
+The development environment includes scripts for updating the firmware of the Safety Processor.  
+By connecting a Microchip FlashPro to the OBC and running the following commands, you can update the firmware:
+
+[source, bash]
+----
+cd igloo2/tools
+make program_image
+----
+
+After running the command, verify that the process completes successfully by confirming output similar to the following log:
+
+[source, txt]
+----
+mkdir -p ./log && echo "*" > ./log/.gitignore
+FPExpress SCRIPT:script/program_image.tcl \
+	"SCRIPT_ARGS:../bitstream/sc_obc_spv1.job" \
+	LOGFILE:./log/program_image.log
+Console Mode = Software Version: 2025.1.0.14
+Programmer 'S209431' : JTAG TCK / SPI SCK frequency = 1 MHz
+programmer 'S209431' : FlashPro5
+Created new project '/home/exhome/daisuke/spacecubics/sc-obc-v1/sc-obc-v1-fpga/igloo2/tools/sc_obc_spv1/sc_obc_spv1.pro'
+STAPL file '/home/exhome/daisuke/spacecubics/sc-obc-v1/sc-obc-v1-fpga/igloo2/tools/sc_obc_spv1/sc_obc_spv1.stp' has been loaded successfully.
+DESIGN : sc_obc_spv1;  CHECKSUM : B723;  ALG_VERSION : 2
+Software Version: 2025.1.0.14
+STAPL file '/home/exhome/daisuke/spacecubics/sc-obc-v1/sc-obc-v1-fpga/igloo2/tools/sc_obc_spv1/sc_obc_spv1.stp' has been loaded successfully.
+DESIGN : sc_obc_spv1;  CHECKSUM : B723;  ALG_VERSION : 2
+Programmer 'S209431' : JTAG TCK / SPI SCK frequency = 1 MHz
+programmer 'S209431' : FlashPro5
+The 'create_job_project' command succeeded.
+The 'set_programming_action' command succeeded.
+programmer 'S209431' : Scan Chain...
+Programmer 'S209431' : JTAG TCK / SPI SCK frequency = 1 MHz
+programmer 'S209431' : Check Chain...
+programmer 'S209431' : Scan and Check Chain PASSED.
+programmer 'S209431' : device 'M2GL090' : Executing action PROGRAM
+Programmer 'S209431' : JTAG TCK / SPI SCK frequency = 4 MHz
+programmer 'S209431' : device 'M2GL090' : Family: Igloo2
+programmer 'S209431' : device 'M2GL090' : Product:      M2GL090
+programmer 'S209431' : device 'M2GL090' : Cortex-M3 Disabled (M3_ALLOWED = 0)
+programmer 'S209431' : device 'M2GL090' : Programming Interface Protocol: JTAG
+programmer 'S209431' : device 'M2GL090' : EXPORT ISC_ENABLE_RESULT[32] = 007f6b44
+programmer 'S209431' : device 'M2GL090' : EXPORT CRCERR[1] = 0
+programmer 'S209431' : device 'M2GL090' : EXPORT EDCERR[1] = 0
+programmer 'S209431' : device 'M2GL090' : Programming FPGA Array...
+programmer 'S209431' : device 'M2GL090' : Calculating component bitstream digests using programming file...
+programmer 'S209431' : device 'M2GL090' : EXPORT Fabric component bitstream digest[256] = a7ae39945a8989aa2fe0a1ab8da73c28b00b45f55842edc5ce64814e120d45e7
+programmer 'S209431' : device 'M2GL090' : EXPORT Entire bitstream digest[256] = 5e9b5956b50568d02bca36fba8aed519ef89f4920e947615408ec827bd1e956e
+programmer 'S209431' : device 'M2GL090' : Reading digests for all the segments from the device...
+programmer 'S209431' : device 'M2GL090' : EXPORT Fabric digest: [256] = 8882e3e7fc5166ea57964e00afc68b2aa1e791feff238b297c814b27f51d5e10
+programmer 'S209431' : device 'M2GL090' : Design Name: sc_obc_spv1
+programmer 'S209431' : device 'M2GL090' : EXPORT CHECKSUM[16] = b723
+programmer 'S209431' : device 'M2GL090' : EXPORT READ_DESIGN_INFO: [272] = 000000000000000000000000000000000000000000317670735f63626f5f6373b723
+programmer 'S209431' : device 'M2GL090' : EXPORT DESIGNVER[16] = 0000
+programmer 'S209431' : device 'M2GL090' : EXPORT BACKLEVEL[16] = 0000
+programmer 'S209431' : device 'M2GL090' : ===================================================================================
+programmer 'S209431' : device 'M2GL090' : EXPORT DSN[128] = 23b45d5998b6bf67d173481d28369982
+programmer 'S209431' : device 'M2GL090' : ===================================================================================
+programmer 'S209431' : Finished: Sat Nov 15 18:14:34 2025 (Elapsed time 00:01:52)
+programmer 'S209431' : device 'M2GL090' : Executing action PROGRAM PASSED.
+programmer 'S209431' : Chain programming PASSED.
+Chain Programming Finished: Sat Nov 15 18:14:34 2025 (Elapsed time 00:01:52)
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+The Execute Script command succeeded.
+Exported log file ./log/program_image.log.
+----

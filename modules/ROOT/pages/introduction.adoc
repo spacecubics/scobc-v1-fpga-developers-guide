@@ -1,0 +1,45 @@
+== Introduction
+
+The SC-OBC Module V1 is a space-grade single-board computer that integrates the AMD Versal AI Edge Series VE2302 as its main processor. AMD Versal is a high-performance device implementing a heterogeneous computing (Adaptive SoC) architecture that combines a CPU, FPGA, and AI Engine. It enables efficient processing of large-scale sensor data—such as optical sensors, SAR, and LiDAR—including input preprocessing, hardware acceleration, vector-based edge computing, and high-capacity data recording.
+
+A Microchip IGLOO2 device is implemented as a safety processor to perform health monitoring of the main processor. The hardware is composed of radiation-tolerant devices and industrial-grade components with proven radiation resistance, ensuring high reliability in space environments.
+
+This document provides the technical information required to develop the FPGA design for the SC-OBC Module V1.
+
+This document applies to the following product version:
+
+[cols=",",options="header",]
+|===
+| Product Name     | Model Number
+| SC-OBC Module V1 | SC-OBC-V1001
+|===
+
+[CAUTION]
+====
+This document assumes that the reader has basic knowledge of FPGA development. Therefore, the following topics are not covered:
+
+* Basic technical information on AMD FPGA device specifications or development tools
+* Syntax of HDL languages, or fundamentals of digital circuit design and verification using HDL
+* Information related to the AMBA (Advanced Microcontroller Bus Architecture) specifications
+
+For details on these topics, refer to the documents listed in the *References* section.
+====
+
+=== Required Development Tools
+
+The following tools are required to develop the FPGA and update the safety processor firmware on the SC-OBC Module V1:
+
+* Main Processor (Versal) development: *Vivado*
+* Safety Processor firmware updates: *Libero SoC* (using the included FlashPro Express)
+
+==== Supported Tool Versions
+
+[cols=",,",options="header",]
+|===
+| Tools                  | Version         | URL
+| Vivado                 | 2025.1 or later | link:https://www.xilinx.com/support/download.html[Vivado Edition 2025.1]
+| FPExpress (Libero SoC) | 2025.1 or later | link:https://www.microchip.com/en-us/products/fpgas-and-plds/fpga-and-soc-design-tools/fpga/libero-software-later-versions[Libero SoC Design Suite Versions 2025.1 to 12.0]
+|===
+
+In addition, the development environment is expected to include general development tools such as GNU make and git.
+

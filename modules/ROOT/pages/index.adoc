@@ -2,3 +2,13 @@
 :stem: latexmath
 
 = SC-OBC Module V1 FPGA Developers Guide
+
+include::introduction.adoc[]
+
+include::getting_started.adoc[]
+
+include::main_processor_development.adoc[]
+
+include::safety_processor_development.adoc[]
+
+include::references.adoc[]

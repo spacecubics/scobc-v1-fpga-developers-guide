@@ -1,0 +1,9 @@
+== References
+
+link:https://docs.amd.com/r/en-US/am011-versal-acap-trm[Versal Adaptive SoC Technical Reference Manual (AM011)]
+
+link:https://docs.amd.com/r/en-US/pg313-network-on-chip[Versal Adaptive SoC Programmable Network on Chip and Integrated Memory Controller v1.1 (PG313)]
+
+link:https://docs.amd.com/r/en-US/ug1273-versal-acap-design[Versal Adaptive SoC Design Guide (UG1273)]
+
+link:https://docs.amd.com/r/en-US/am010-versal-selectio[Versal Adaptive SoC SelectIO Resources Architecture Manual (AM010)]
