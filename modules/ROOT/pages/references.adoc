@@ -1,4 +1,4 @@
-== References
+= References
 
 link:https://docs.amd.com/r/en-US/am011-versal-acap-trm[Versal Adaptive SoC Technical Reference Manual (AM011)]
 

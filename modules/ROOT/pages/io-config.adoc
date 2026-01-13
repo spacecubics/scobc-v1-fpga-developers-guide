@@ -1,8 +1,8 @@
-== IO Configuration
+= IO Configuration
 
 Users can utilize **22 HDIO pins, 54 XPIO pins, and 8 GTYP transceiver interfaces** as IO connected to the Programmable Logic (PL).
 
-=== HDIO Resource List
+== HDIO Resource List
 
 HDIO (High-Density I/O) includes resources that support low-speed SDR and DDR interfaces.
 It supports I/O standards corresponding to bank voltages of **1.8 V, 2.5 V, and 3.3 V**.
@@ -40,7 +40,7 @@ The following HDIO resources are available to the user:
 
 ---
 
-=== XPIO Resource List
+== XPIO Resource List
 
 XPIO supports both high-performance interfaces and low-speed SDR/DDR interfaces.
 With XPHY, XPIO enables data alignment, serialization, and deserialization.
