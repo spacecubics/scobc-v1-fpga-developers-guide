@@ -1,0 +1,110 @@
+== IO Configuration
+
+Users can utilize **22 HDIO pins, 54 XPIO pins, and 8 GTYP transceiver interfaces** as IO connected to the Programmable Logic (PL).
+
+=== HDIO Resource List
+
+HDIO (High-Density I/O) includes resources that support low-speed SDR and DDR interfaces.
+It supports I/O standards corresponding to bank voltages of **1.8 V, 2.5 V, and 3.3 V**.
+
+For detailed information about Versal HDIO, refer to: link: https://docs.amd.com/r/en-US/am010-versal-selectio[Versal Adaptive SoC SelectIO Resources Architecture Manual (AM010)]
+
+The following HDIO resources are available to the user:
+
+[cols="1,4,1,1",options="header",]
+|===
+| B2B Connector | Name            | FPGA Pad | IO Type
+| A22           | IO_L0P_302      | F14      | HDIO
+| B22           | IO_L0N_302      | E14      | HDIO
+| A24           | IO_L1P_302      | C14      | HDIO
+| B24           | IO_L1N_302      | C13      | HDIO
+| A26           | IO_L2P_302      | E13      | HDIO
+| B26           | IO_L2N_302      | D14      | HDIO
+| B23           | IO_L3P_302      | E12      | HDIO
+| C23           | IO_L3N_302      | D12      | HDIO
+| B25           | IO_L4P_302      | F11      | HDIO
+| C25           | IO_L4N_302      | E11      | HDIO
+| D22           | IO_L5P_HDGC_302 | D11      | HDIO
+| E22           | IO_L5N_HDGC_302 | C12      | HDIO
+| D24           | IO_L6P_HDGC_302 | D10      | HDIO
+| E24           | IO_L6N_HDGC_302 | C10      | HDIO
+| D26           | IO_L7P_302      | B10      | HDIO
+| E26           | IO_L7N_302      | A10      | HDIO
+| E21           | IO_L8P_302      | B11      | HDIO
+| F21           | IO_L8N_302      | A11      | HDIO
+| E23           | IO_L9P_302      | B12      | HDIO
+| F23           | IO_L9N_302      | A13      | HDIO
+| E25           | IO_L10P_302     | B13      | HDIO
+| F25           | IO_L10N_302     | A14      | HDIO
+|===
+
+---
+
+=== XPIO Resource List
+
+XPIO supports both high-performance interfaces and low-speed SDR/DDR interfaces.
+With XPHY, XPIO enables data alignment, serialization, and deserialization.
+It supports I/O standards corresponding to bank voltages of **1.0 V, 1.2 V, 1.35 V, and 1.5 V**.
+
+For more information on Versal XPIO, refer to: link: https://docs.amd.com/r/en-US/am010-versal-selectio[Versal Adaptive SoC SelectIO Resources Architecture Manual (AM010)]
+
+The following XPIO resources are available to the user:
+
+[cols="1,4,1,1",options="header",]
+|===
+| B2B Connector | Name                    | FPGA Pad | IO Type
+| A28           | IO_L0P_XCC_N0P0_703     | J27      | XPIO
+| B28           | IO_L0N_XCC_N0P1_703     | H28      | XPIO
+| A30           | IO_L1P_N0P2_703         | H27      | XPIO
+| B30           | IO_L1N_N0P3_703         | G28      | XPIO
+| A32           | IO_L2P_N0P4_703         | G27      | XPIO
+| B32           | IO_L2N_N0P5_703         | F28      | XPIO
+| A34           | IO_L3P_XCC_N1P0_703     | E27      | XPIO
+| B34           | IO_L3N_XCC_N1P1_703     | E28      | XPIO
+| A36           | IO_L4P_N1P2_703         | D27      | XPIO
+| B36           | IO_L4N_N1P3_703         | C28      | XPIO
+| A38           | IO_L5P_N1P4_703         | C27      | XPIO
+| B38           | IO_L5N_N1P5_703         | B28      | XPIO
+| B27           | IO_L6P_GC_XCC_N2P0_703  | H25      | XPIO
+| C27           | IO_L6N_GC_XCC_N2P1_703  | J26      | XPIO
+| B29           | IO_L7P_N2P2_703         | G25      | XPIO
+| C29           | IO_L7N_N2P3_703         | G26      | XPIO
+| B31           | IO_L8P_N2P4_703         | F26      | XPIO
+| C31           | IO_L8N_N2P5_703         | E26      | XPIO
+| B33           | IO_L9P_GC_XCC_N3P0_703  | C25      | XPIO
+| C33           | IO_L9N_GC_XCC_N3P1_703  | B25      | XPIO
+| B35           | IO_L10P_N3P2_703        | A25      | XPIO
+| C35           | IO_L10N_N3P3_703        | A26      | XPIO
+| B37           | IO_L11P_N3P4_703        | B26      | XPIO
+| C37           | IO_L11N_N3P5_703        | B27      | XPIO
+| D28           | IO_L12P_GC_XCC_N4P0_703 | H23      | XPIO
+| E28           | IO_L12N_GC_XCC_N4P1_703 | H24      | XPIO
+| D30           | IO_L13P_N4P2_703        | F22      | XPIO
+| E30           | IO_L13N_N4P3_703        | G23      | XPIO
+| D32           | IO_L14P_N4P4_703        | E22      | XPIO
+| E32           | IO_L14N_N4P5_703        | E23      | XPIO
+| D34           | IO_L15P_XCC_N5P0_703    | D24      | XPIO
+| E34           | IO_L15N_XCC_N5P1_703    | C24      | XPIO
+| D36           | IO_L16P_N5P2_703        | C23      | XPIO
+| E36           | IO_L16N_N5P3_703        | B23      | XPIO
+| D38           | IO_L17P_N5P4_703        | A23      | XPIO
+| E38           | IO_L17N_N5P5_703        | A24      | XPIO
+| E27           | IO_L18P_XCC_N6P0_703    | G21      | XPIO
+| F27           | IO_L18N_XCC_N6P1_703    | H22      | XPIO
+| E29           | IO_L19P_N6P2_703        | E20      | XPIO
+| F29           | IO_L19N_N6P3_703        | F21      | XPIO
+| E31           | IO_L20P_N6P4_703        | D20      | XPIO
+| F31           | IO_L20N_N6P5_703        | D21      | XPIO
+| E33           | IO_L21P_XCC_N7P0_703    | B20      | XPIO
+| F33           | IO_L21N_XCC_N7P1_703    | C21      | XPIO
+| E35           | IO_L22P_N7P2_703        | A20      | XPIO
+| F35           | IO_L22N_N7P3_703        | A21      | XPIO
+| E37           | IO_L23P_N7P4_703        | C22      | XPIO
+| F37           | IO_L23N_N7P5_703        | B22      | XPIO
+| B39           | IO_L24P_GC_XCC_N8P0_703 | F23      | XPIO
+| C39           | IO_L24N_GC_XCC_N8P1_703 | F24      | XPIO
+| E40           | IO_L25P_N8P2_703        | E24      | XPIO
+| F39           | IO_L25N_N8P3_703        | F25      | XPIO
+| E39           | IO_L26P_N8P4_703        | D25      | XPIO
+| F40           | IO_L26N_N8P5_703        | D26      | XPIO
+|===

@@ -9,6 +9,14 @@ include::getting_started.adoc[]
 
 include::main_processor_development.adoc[]
 
+include::design-flow.adoc[]
+
+include::ps-dev.adoc[]
+
+include::pl-dev.adoc[]
+
+include::io-config.adoc[]
+
 include::safety_processor_development.adoc[]
 
 include::references.adoc[]

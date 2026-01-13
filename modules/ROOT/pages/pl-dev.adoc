@@ -1,0 +1,37 @@
+== Programmable Logic Development
+
+All Programmable Logic (PL) in the SC-OBC Module V1 is fully accessible to the user,
+allowing mission-specific functions to be freely implemented to meet spacecraft requirements.
+
+=== Programmable Logic Resources
+
+The Programmable Logic of the SC-OBC Module V1 provides access to the following resources:
+
+[cols="1,2,1",options="header",]
+|===
+| Category                  | Item                         | Resource
+.3+| AI Engine              | AI Engine-ML Tiles           | 32
+                            | AIE/AIE-ML Data Memory (Mb)  | 17
+                            | AIE-ML Shared Memory (Mb)    | 68
+.5+| Programmable Logic     | System Logic Cells           | 328,720
+                            | LUTs                         | 150,272
+                            | DSP Engines                  | 464
+                            | NoC Master / NoC Slave Ports | 5
+                            | Distributed RAM (Mb)         | 4.6
+.3+| Memory                 | Total Block RAM (Mb)         | 5.4
+                            | UltraRAM (Mb)                | 43.6
+                            | Accelerator RAM (Mb)         | 32
+| Serial Transceivers       | GTYP Transceivers            | 8
+.2+| Integrated Protocol IP | PCI Express                  | 1 × Gen 4 × 8
+                            | 40G Multirate Ethernet MAC   | 1
+.3+| IO                     | HDIO                         | 22
+                            | XPIO                         | 54
+                            | GTYP                         | 8
+|===
+
+=== Programmable Logic Design Method
+
+Designing the PL involves modifying the Block Design hierarchy or the top-level module (`sc_obc_v1_versal.v`).
+This approach follows the standard AMD MPSoC/FPGA design methodology.
+
+For more information on Versal design techniques, refer to the *Versal Adaptive SoC Design Guide*.
