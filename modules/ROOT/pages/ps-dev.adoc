@@ -1,0 +1,20 @@
+== Processing System Development
+
+The Processing System (PS) can be customized by modifying the configuration of the
+CIPS (Control, Interfaces & Processing System), allowing users to implement their own functions.
+
+.Versal Block Design
+image::block_design.svg[block_design]
+
+Within the Block Design hierarchy `sc_obc_v1_versal`, the CIPS is instantiated under the name `versal_ps`.
+
+In the GUI design flow, you can modify the CIPS configuration by opening the Block Design and selecting **Re-customize IP** for the `versal_ps` instance.
+
+In the CLI design flow, the configuration can be changed by overriding the properties of `versal_ps` as shown in the following example:
+
+[source, tcl]
+----
+set_property -dict [list CONFIG.PS_PMC_CONFIG { \
+    PS_MIO0  {{USAGE GPIO} {DIRECTION inout} {DRIVE_STRENGTH 12mA} {OUTPUT_DATA default} {PULL pulldown} {SCHMITT 0} {SLEW fast}}} \
+] [get_bd_cells versal_ps]
+----
