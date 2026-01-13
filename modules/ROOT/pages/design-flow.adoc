@@ -1,4 +1,4 @@
-== Design Flow
+= Design Flow
 
 The development of the Versal on the SC-OBC Module V1 can be carried out in two ways:
 using the Vivado GUI or using the command-line flow with RTL and Tcl scripts.
@@ -11,7 +11,7 @@ The following diagram illustrates the primary development flow for the SC-OBC-V1
 .SC-OBC Module V1 FPGA Design Flow
 image::sc-obc-v1-fpga-design-flow.svg[sc-obc-v1-fpga-design-flow]
 
-=== GUI Design Flow
+== GUI Design Flow
 
 This method uses the Vivado GUI for design work.
 First, run the `create_versal_ps_bd` target, then open and modify the Vivado project as needed.
@@ -28,12 +28,12 @@ After completing the design in Vivado, close the application and run the `build_
 This will export the `.pdi` and `.xsa` files generated from your design.
 
 [CAUTION]
-====
+===
 When using this flow, running `make clean` will remove the generated design files.
 If you perform design work in the GUI, it is strongly recommended to migrate your changes into scripts.
-====
+===
 
-=== CLI Design Flow
+== CLI Design Flow
 
 This method uses RTL and Tcl scripts for design.
 The `create_versal_ps_bd` target includes entry points for loading RTL files and executing user scripts.

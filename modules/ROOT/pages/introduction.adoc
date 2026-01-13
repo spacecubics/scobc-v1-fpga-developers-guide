@@ -1,4 +1,4 @@
-== Introduction
+= Introduction
 
 The SC-OBC Module V1 is a space-grade single-board computer that integrates the AMD Versal AI Edge Series VE2302 as its main processor. AMD Versal is a high-performance device implementing a heterogeneous computing (Adaptive SoC) architecture that combines a CPU, FPGA, and AI Engine. It enables efficient processing of large-scale sensor data—such as optical sensors, SAR, and LiDAR—including input preprocessing, hardware acceleration, vector-based edge computing, and high-capacity data recording.
 
@@ -15,7 +15,7 @@ This document applies to the following product version:
 |===
 
 [CAUTION]
-====
+===
 This document assumes that the reader has basic knowledge of FPGA development. Therefore, the following topics are not covered:
 
 * Basic technical information on AMD FPGA device specifications or development tools
@@ -23,16 +23,16 @@ This document assumes that the reader has basic knowledge of FPGA development. T
 * Information related to the AMBA (Advanced Microcontroller Bus Architecture) specifications
 
 For details on these topics, refer to the documents listed in the *References* section.
-====
+===
 
-=== Required Development Tools
+== Required Development Tools
 
 The following tools are required to develop the FPGA and update the safety processor firmware on the SC-OBC Module V1:
 
 * Main Processor (Versal) development: *Vivado*
 * Safety Processor firmware updates: *Libero SoC* (using the included FlashPro Express)
 
-==== Supported Tool Versions
+=== Supported Tool Versions
 
 [cols=",,",options="header",]
 |===

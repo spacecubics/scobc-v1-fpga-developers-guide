@@ -1,4 +1,4 @@
-== Processing System Development
+= Processing System Development
 
 The Processing System (PS) can be customized by modifying the configuration of the
 CIPS (Control, Interfaces & Processing System), allowing users to implement their own functions.

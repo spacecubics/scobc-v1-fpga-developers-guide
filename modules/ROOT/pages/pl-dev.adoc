@@ -1,9 +1,9 @@
-== Programmable Logic Development
+= Programmable Logic Development
 
 All Programmable Logic (PL) in the SC-OBC Module V1 is fully accessible to the user,
 allowing mission-specific functions to be freely implemented to meet spacecraft requirements.
 
-=== Programmable Logic Resources
+== Programmable Logic Resources
 
 The Programmable Logic of the SC-OBC Module V1 provides access to the following resources:
 
@@ -29,7 +29,7 @@ The Programmable Logic of the SC-OBC Module V1 provides access to the following 
                             | GTYP                         | 8
 |===
 
-=== Programmable Logic Design Method
+== Programmable Logic Design Method
 
 Designing the PL involves modifying the Block Design hierarchy or the top-level module (`sc_obc_v1_versal.v`).
 This approach follows the standard AMD MPSoC/FPGA design methodology.

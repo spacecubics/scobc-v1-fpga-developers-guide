@@ -1,18 +1,18 @@
-== Getting Started
+= Getting Started
 
 This chapter provides the steps required to perform the following tasks:
 
 * Download the FPGA development environment for the SC-OBC Module V1
 * Build the design using the configuration for the Evaluation Board (EVB1001) provided by Space Cubics, and generate the Versal boot image files PDI (Programmable Device Image) and XSA (Xilinx Support Archive)
 
-=== Download the SC-OBC Module V1 FPGA Development Environment
+== Download the SC-OBC Module V1 FPGA Development Environment
 
 [source, bash]
 ----
 git clone https://github.com/spacecubics/sc-obc-v1-fpga
 ----
 
-=== Build the SC-OBC Module V1
+== Build the SC-OBC Module V1
 
 [source, bash]
 ----

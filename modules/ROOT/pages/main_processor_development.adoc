@@ -1,11 +1,11 @@
-== Main Processor (Versal) Development
+= Main Processor (Versal) Development
 
 This chapter describes how to develop the Main Processor implemented with the Versal device.
 
 The provided development environment is configured with the standard features enabled for the SC-OBC Module V1 as implemented on the onboard hardware.
 Users can extend this environment by adding the functions required for their mission, enabling them to implement the capabilities needed for their spacecraft.
 
-=== Directory Structure of the Development Environment
+== Directory Structure of the Development Environment
 
 Before building, the Versal development environment has the following structure:
 

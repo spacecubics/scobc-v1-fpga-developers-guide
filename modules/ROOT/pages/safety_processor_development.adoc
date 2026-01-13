@@ -1,11 +1,11 @@
-== Safety Processor (IGLOO2) Development
+= Safety Processor (IGLOO2) Development
 
 The Safety Processor is used by programming the firmware provided by Space Cubics.  
 At this time, modifications to the Safety Processor logic by the user are not supported.
 
 It is recommended to always use the latest version of the IGLOO2 firmware.
 
-=== Firmware Update
+== Firmware Update
 
 The development environment includes scripts for updating the firmware of the Safety Processor.  
 By connecting a Microchip FlashPro to the OBC and running the following commands, you can update the firmware:
