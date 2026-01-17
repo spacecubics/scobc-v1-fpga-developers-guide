@@ -1,6 +1,2 @@
-name: scobc-v1-fpga-developers-guide
-title: SC-OBC Module V1 FPGA Developers Guide
+name: scobc-v1
 version: "latest"
-start_page: index.adoc
-nav:
-  - modules/ROOT/nav.adoc
