@@ -4,19 +4,3 @@
 = SC-OBC Module V1 FPGA Developers Guide
 
 include::introduction.adoc[leveloffset=+1]
-
-include::getting_started.adoc[leveloffset=+1]
-
-include::main_processor_development.adoc[leveloffset=+1]
-
-include::design-flow.adoc[leveloffset=+1]
-
-include::ps-dev.adoc[leveloffset=+1]
-
-include::pl-dev.adoc[leveloffset=+1]
-
-include::io-config.adoc[leveloffset=+1]
-
-include::safety_processor_development.adoc[leveloffset=+1]
-
-include::references.adoc[leveloffset=+1]
