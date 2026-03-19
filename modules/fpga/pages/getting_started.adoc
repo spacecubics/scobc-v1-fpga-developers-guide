@@ -22,14 +22,14 @@ However, the configurations differ in DDR4 settings and in the temperature range
 As a result, using an image built for a different grade may lead to unstable or incorrect operation.
 This will not cause any physical damage to the board.
 
-==== Space Grade build
+=== Space Grade build
 
 [source, bash]
 ----
 make GRADE=SPACE
 ----
 
-==== Developer Grade build
+=== Developer Grade build
 
 [source, bash]
 ----
