@@ -10,14 +10,30 @@ This chapter provides the steps required to perform the following tasks:
 [source, bash]
 ----
 git clone https://github.com/spacecubics/sc-obc-v1-fpga
+cd sc-obc-v1-fpga/versal
 ----
 
 == Build the SC-OBC Module V1
 
+The build command differs depending on the OBC Module board grade you are using.
+
+CAUTION: Images generated with either build option can be used on both hardware variants.
+However, the configurations differ in DDR4 settings and in the temperature range used for timing verification in Vivado.
+As a result, using an image built for a different grade may lead to unstable or incorrect operation.
+This will not cause any physical damage to the board.
+
+==== Space Grade build
+
 [source, bash]
 ----
-cd sc-obc-v1-fpga/versal
-make implement
+make GRADE=SPACE
+----
+
+==== Developer Grade build
+
+[source, bash]
+----
+make GRADE=DEV
 ----
 
 After the build completes, the files `sc_obc_v1_versal.pdi` and `sc_obc_v1_versal.xsa` will be generated under the `work/implement/project` directory.  
