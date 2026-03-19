@@ -10,8 +10,9 @@ This document applies to the following product version:
 
 [cols=",",options="header",]
 |===
-| Product Name     | Model Number
-| SC-OBC Module V1 | SC-OBC-V1001
+| Product Name                       | Model Number
+| SC-OBC Module V1 (Space Grade)     | SC-OBC-V1001
+| SC-OBC Module V1 (Developer Grade) | SC-OBC-V1D01
 |===
 
 [CAUTION]
