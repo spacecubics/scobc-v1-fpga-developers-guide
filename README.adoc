@@ -1,4 +1,6 @@
 = SC-OBC Module V1 FPGA Developers Guide
 
+NOTE: This repository has been subtree merged to https://github.com/spacecubics/sc-docs-v1
+
 The SC-OBC Module V1 FPGA Developers Guide describes the FPGA for the SC-OBC
 Module V1. You can read the document at https://docs.spacecubics.com/[https://docs.spacecubics.com/].
